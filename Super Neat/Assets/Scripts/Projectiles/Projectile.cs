@@ -13,12 +13,7 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void Update () {
-		this.transform.Translate (
-		this.transform.position.Set (
-			this.transform.position.x + this.transform. * speed, 
-			this.transform.position.y + direction.y * speed, 
-			this.transform.position.z
-		);
+
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {

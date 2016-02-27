@@ -3,9 +3,6 @@ using System.Collections;
 
 abstract public class Weapon : MonoBehaviour {
 
-	[SerializeField]
-	protected GameObject projectile = null;
-
 	public void Start () {
 		
 	}
@@ -14,12 +11,6 @@ abstract public class Weapon : MonoBehaviour {
 		
 	}
 
-	public void Execute () {
-		if (this.ammo > 0) this.Execute();
-	}
-
-	virtual protected void Execute () {
-
-	}
+	abstract public void Use ();
 
 }
