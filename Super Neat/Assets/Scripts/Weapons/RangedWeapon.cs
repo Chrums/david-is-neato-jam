@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RangedWeapon : Weapon {
 	
@@ -7,22 +8,29 @@ public class RangedWeapon : Weapon {
 	protected GameObject projectile = null;
 
 	[SerializeField]
+	private Transform projectileOrigin = null;
+
+	[SerializeField]
 	protected int ammo = 0;
 
-	void Start () {
-	
+	protected GameObject CreateProjectile (Vector3 direction) {
+		return GameObject.Instantiate (this.projectile, projectileOrigin.position, Quaternion.FromToRotation(Vector3.right, direction)) as GameObject;
 	}
 
-	void Update () {
-	
-	}
-
-	override public void Use () {
+	override public void Execute (Vector3 direction) {
 		if (this.ammo > 0) {
-			Fired ((GameObject) GameObject.Instantiate(this.projectile, this.transform.position, this.transform.rotation));
+			ammo--;
+			List<GameObject> projectiles = Fire (direction);
+			Fired (projectiles);
 		}
 	}
 
-	virtual protected void Fired (GameObject projectile) { }
+	virtual protected List<GameObject> Fire (Vector3 direction) {
+		List<GameObject> projectiles = new List<GameObject> ();
+		projectiles.Add (this.CreateProjectile (direction));
+		return projectiles;
+	}
+
+	virtual protected void Fired (List<GameObject> projectiles) { }
 
 }
