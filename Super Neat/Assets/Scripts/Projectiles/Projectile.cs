@@ -3,9 +3,15 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 
+<<<<<<< HEAD
 	private const string CHARACTER_TAG = "Character";
 
 	protected float speed = 0.0f;
+=======
+	[SerializeField]
+	protected float speed = 0.0f;
+
+>>>>>>> master
 	private CircleCollider2D collider;
 
 	void Start () {
@@ -13,6 +19,7 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void Update () {
+<<<<<<< HEAD
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
@@ -30,5 +37,20 @@ public class Projectile : MonoBehaviour {
 	
 	virtual protected void EnteredOther (Collider2D other) { }
 	virtual protected void ExitedOther (Collider2D other) { }
+=======
+		this.transform.Translate (Vector3.right * speed, this.transform);
+	}
+
+	void OnTriggerEnter2D (Collider2D other) {
+		this.Entered (other);
+	}
+
+	void OnTriggerExit2D (Collider2D other) {
+		this.Exited (other);
+	}
+	
+	virtual protected void Entered (Collider2D other) { }
+	virtual protected void Exited (Collider2D other) { }
+>>>>>>> master
 
 }
