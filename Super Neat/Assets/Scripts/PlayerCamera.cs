@@ -4,7 +4,6 @@ using System.Collections;
 public class PlayerCamera : MonoBehaviour {
 
 	[SerializeField] private Transform target;
-	[SerializeField] private Vector3 offset;
 	
 	public float dampTime = 0.15f;
     private Vector3 velocity = Vector3.zero;

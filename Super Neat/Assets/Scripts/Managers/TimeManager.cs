@@ -13,12 +13,7 @@ public class TimeManager : MonoBehaviour {
 		if(Mathf.Abs(inputManager.movement.x) > threshold || Mathf.Abs(inputManager.movement.y) > threshold) {
 			Time.timeScale = fullSpeedTimeScale;
 		} else {
-			float distance = Vector3.Distance(inputManager.previousMousePosition, inputManager.currentMousePosition);
-			if(distance > threshold) {
-				Time.timeScale = Mathf.Clamp(fullSpeedTimeScale - distance * 2.5f, slowedTimeScale, fullSpeedTimeScale);
-			} else {
-				Time.timeScale = slowedTimeScale;
-			}
+			Time.timeScale = slowedTimeScale;
 		}
 	}
 }

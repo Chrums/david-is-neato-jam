@@ -10,7 +10,6 @@ abstract public class Weapon : MonoBehaviour {
 
 	public void Update () {
 		cooldownRemaining -= Time.deltaTime;
-		Use (Vector3.up);
 	}
 
 	public void Use (Vector3 direction) {
@@ -21,5 +20,4 @@ abstract public class Weapon : MonoBehaviour {
 	}
 
 	abstract public void Execute (Vector3 direction);
-
 }
