@@ -7,6 +7,7 @@ public class Bullet : Projectile {
 		Character character = other.GetComponent<Character>();
 		if(character != null) {
 			character.Kill();
+			Destroy(gameObject);
 		}
 
 		Projectile projectile = other.GetComponent<Projectile>();
