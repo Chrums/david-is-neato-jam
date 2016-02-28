@@ -13,8 +13,6 @@ public class TestProjectile : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collider) {
 
-//		if(collider.transform.tag != "Player") {
-        	Destroy(gameObject);
-//		}
+        Destroy(gameObject);
 	}
 }

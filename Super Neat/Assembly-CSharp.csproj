@@ -45,11 +45,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\InputManager.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Factories\EnemyFactory.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\TimeManager.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Projectiles\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Projectiles\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Stage.cs" />
      <Compile Include="Assets\Scripts\TestProjectile.cs" />
-     <Compile Include="Assets\Scripts\TimeManager.cs" />
+     <Compile Include="Assets\Scripts\Weapons\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Pistol.cs" />
+     <Compile Include="Assets\Scripts\Weapons\RangedWeapon.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
