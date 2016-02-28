@@ -4,7 +4,15 @@ using System.Collections;
 public class Bullet : Projectile {
 
 	override protected void Entered (Collider2D other) {
-		Debug.Log ("Entered: " + other.tag);
+		Character character = other.GetComponent<Character>();
+		if(character != null) {
+			character.Kill();
+		}
+
+		Projectile projectile = other.GetComponent<Projectile>();
+		if(projectile != null && weaponId != projectile.WeaponId) { 
+			Destroy(gameObject);
+		}
 	}
 
 	override protected void Exited (Collider2D other) {

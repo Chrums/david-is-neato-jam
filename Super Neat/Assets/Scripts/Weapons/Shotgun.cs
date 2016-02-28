@@ -10,8 +10,8 @@ public class Shotgun : RangedWeapon {
 	[SerializeField]
 	private float variance = 0.0f;
 
-	override protected List<GameObject> Fire (Vector3 direction) {
-		List<GameObject> projectiles = new List<GameObject> ();
+	override protected List<Projectile> Fire (Vector3 direction) {
+		List<Projectile> projectiles = new List<Projectile> ();
 		for (int i = 0; i < this.scatter; i++) {
 			float x = Random.value - 0.5f * this.variance;
 			float y = Random.value - 0.5f * this.variance;
@@ -21,7 +21,7 @@ public class Shotgun : RangedWeapon {
 		return projectiles;
 	}
 
-	override protected void Fired (List<GameObject> projectiles) {
+	override protected void Fired (List<Projectile> projectiles) {
 		
 	}
 	

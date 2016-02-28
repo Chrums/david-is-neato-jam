@@ -2,16 +2,11 @@
 using System.Collections;
 
 public class Enemy : Character {
-	
-	public Weapon weapon;	
 
-	private void Start() {
+	public override void Kill() {
 		
-		
-	}
-
-	private void Update() {
-	
-		
+		animator.Play("enemy_death");
+		Destroy(collider);
+//		Destroy(gameObject);
 	}
 }

@@ -6,6 +6,12 @@ public class Projectile : MonoBehaviour {
 	[SerializeField]
 	protected float speed = 0.0f;
 
+	protected int weaponId;
+	public int WeaponId {
+		get { return weaponId; } 
+		set { weaponId = value; }
+	}
+
 	private CircleCollider2D collider;
 
 	void Start () {
