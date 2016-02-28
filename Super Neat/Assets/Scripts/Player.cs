@@ -1,13 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
-
-	public Weapon weapon;
+public class Player : Character {
 
 	public SpriteRenderer gunSprite;
-
-	public float moveSpeed;
 
 	public Transform bulletCenter;
 	public Transform bulletSpawnOrigin;
