@@ -17,7 +17,7 @@ public class Explosion : MonoBehaviour {
 	}
 
 	void Update () {
-		if (this.transform.localScale.x < this.endSize) this.transform.localScale += new Vector3 (expandRate, expandRate, 0.0f);
+		if (this.transform.localScale.x < this.endSize) this.transform.localScale += new Vector3 (expandRate, expandRate, 0.0f) * Time.deltaTime;
 		else this.Destroy(this.gameObject);
 	}
 

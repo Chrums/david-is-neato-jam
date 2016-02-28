@@ -6,6 +6,12 @@ public class Projectile : MonoBehaviour {
 	[SerializeField]
 	protected float speed = 0.0f;
 
+	protected int weaponId;
+	public int WeaponId {
+		get { return weaponId; } 
+		set { weaponId = value; }
+	}
+
 	private CircleCollider2D collider;
 
 	void Start () {
@@ -13,7 +19,8 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void Update () {
-		this.transform.Translate (Vector3.right * speed, this.transform);
+		
+		this.transform.Translate (Vector3.right * speed * Time.deltaTime, this.transform);
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
