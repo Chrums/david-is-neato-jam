@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Super Neat/Assets/Sprites/pBody_walk.anim.meta
 guid: 9bc8f9d2a3b9a4a089c40eeb0c52b948
 timeCreated: 1456611354
+=======
+guid: 795dbf880b8df490e82044b3c7e3e8cc
+timeCreated: 1456622652
+>>>>>>> jesse:Super Neat/Assets/Prefabs/Player.prefab.meta
 licenseType: Free
 NativeFormatImporter:
   userData: 

@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 5c166eef9115e4ff0bc93a5f8726609d
-timeCreated: 1456603227
+guid: e85813a2bacd64560b608e3232c7fa0f
+timeCreated: 1456622507
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: player_0
+    21300002: player_1
+    21300004: player_2
+    21300006: player_3
+    21300008: player_4
+    21300010: player_5
+    21300012: player_6
+    21300014: player_7
+    21300016: player_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -17,20 +26,20 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
+  cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +47,193 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: player_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 4}
+        - {x: -16, y: 4}
+        - {x: -16, y: -15}
+        - {x: -15, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 3}
+    - name: player_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 8}
+        - {x: -16, y: -12}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -4}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
+    - name: player_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -16, y: 3}
+        - {x: -16, y: -11}
+        - {x: -15, y: -14}
+        - {x: -11, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
+    - name: player_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 15}
+        - {x: -15, y: 11}
+        - {x: -16, y: 9}
+        - {x: -16, y: -11}
+        - {x: -9, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: 2}
+        - {x: 16, y: 11}
+        - {x: 12, y: 15}
+    - name: player_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -16, y: 3}
+        - {x: -16, y: -11}
+        - {x: -15, y: -14}
+        - {x: -11, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
+    - name: player_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 8}
+        - {x: -16, y: -12}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -4}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
+    - name: player_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -11, y: 16}
+        - {x: -16, y: 9}
+        - {x: -16, y: -14}
+        - {x: 10, y: -14}
+        - {x: 15, y: -8}
+        - {x: 16, y: 0}
+        - {x: 16, y: 14}
+    - name: player_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 8}
+        - {x: -16, y: -12}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -4}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
+    - name: player_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -16, y: 8}
+        - {x: -16, y: -11}
+        - {x: -15, y: -16}
+        - {x: 6, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: 4}
+        - {x: 16, y: 14}
+        - {x: 10, y: 16}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
