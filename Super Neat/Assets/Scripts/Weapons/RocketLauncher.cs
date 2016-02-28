@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class RocketLauncher : RangedWeapon {
 
-	override protected void Fired (List<GameObject> projectiles) {
+	override protected void Fired (List<Projectile> projectiles) {
 
 	}
 
